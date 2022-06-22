@@ -12,9 +12,22 @@
 <body>
     <div class="container">
         <img src="./img/nature.webp" alt="">
+        <h1 id="current-time">12:00:00</h1>
+        <div class="quotes">
+            <p>TODAY'S QUOTES</p>
+            <h2>Lost time never found again</h2>
+        </div>
     </div>
 
 
+    <script>
+
+        let time = document.getElementById("current-time");
+
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();
+
+    </script>
 </body>
 
 </html>
